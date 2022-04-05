@@ -7,6 +7,10 @@ puts "----------"
 # Your code goes here ...
 
 @store1 = Store.find_by(id: 1)
+Store.name = "Decent Store"
+
+@store2 = Store.find_by(id: 2)
+
 
 
 # Exercise 2: Update the first store
