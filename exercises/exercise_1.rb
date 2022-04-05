@@ -5,9 +5,6 @@ puts "----------"
 
 # Your code goes below here ...
 
-class Store < ApplicationRecord
-end
-
 Burnaby = Store.new
 Burnaby.annual_revenue = 300000
 Burnaby.has_men = true
