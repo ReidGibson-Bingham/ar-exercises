@@ -11,6 +11,24 @@ puts "----------"
 
 # Your code goes here ...
 
+class Employee < ActiveRecord::Base
+  (class): belongs_to :store
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :hourly_rate, numericality: { greater_than: 39, less_than: 201 }
+  validates_associated :Store
+
+end
+
+
+class Employee < ActiveRecord::Base
+  (class): belongs_to :store
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :hourly_rate, numericality: { greater_than: 39, less_than: 201 }
+  validates_associated :Store
+
+end
 
 # Exercise 7: Validations for both models
 # Add validations to two models to enforce the following business rules:
